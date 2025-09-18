@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    background: linear-gradient(180deg, #DDFFE3 0%, #5D7D63 100%);
+    box-shadow: 0 4px 5.3px 0 rgba(0, 0, 0, 0.00);
+}
+
+.logo{
+    margin-left: 35px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #86C78A;
+    padding: none;
+}
