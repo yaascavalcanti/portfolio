@@ -1,17 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    height: 100vh;
     background: linear-gradient(180deg, #DDFFE3 0%, #5D7D63 100%);
     box-shadow: 0 4px 5.3px 0 rgba(0, 0, 0, 0.00);
+    margin: 0;
+    height: 100vh;
 }
 
 .logo{
     margin-left: 35px;
+    width: 98px;
+    height: 98px;
+    aspect-ratio: 1/1;
 }
 
 .menu{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #86C78A;
-    padding: none;
+    color: #000;
 }
+
+ul{
+    display: flex;
+    gap: 81px;
+    margin-right: 79px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90px; /* 562.5% */
+    letter-spacing: -0.48px;
+}
+
+ li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+ }
+
+ .conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 91px;
+    }
+
+ h1{
+    color: #3AA34A;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 90px; /* 375% */
+    letter-spacing: -0.72px;
+ }
+
+ p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    width: 603px;
+    
+ }
+
+ .foto{
+    margin-top: 100px;
+ }
+
+ footer{
+    position:static;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+    gap: 10px;
+    margin-left: 91px;
+ }
+
+ footer .p{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90px; /* 562.5% */
+    letter-spacing: -0.48px;
+ }
+ .fim{
+    display: flex;
+    gap: 10px;
+ }
