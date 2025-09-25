@@ -85,7 +85,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: auto;
     margin-top: 80px;
     gap: 10px;
     margin-left: 91px;
@@ -104,5 +104,6 @@ ul{
     display: flex;
     gap: 10px;
  }
+
 
  
