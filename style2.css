@@ -1,0 +1,100 @@
+/* === ESTILO GERAL === */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(180deg, #DDFFE3 0%, #5D7D63 100%);
+    box-shadow: 0 4px 5.3px 0 rgba(0, 0, 0, 0.00);
+    color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* === CABEÇALHO === */
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #234d2c;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    color: #355e3d;
+  }
+  
+  /* === SEÇÃO DE PROJETOS === */
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 1rem;
+  }
+  
+  #projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  /* === CARD DE PROJETO === */
+  .projeto {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .projeto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  .projeto h2 {
+    font-size: 1.5rem;
+    color: #234d2c;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projeto p {
+    color: #3a5b43;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* === BOTÃO / LINK === */
+  .projeto a {
+    display: inline-block;
+    background: #234d2c;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .projeto a:hover {
+    background: #3b8253;
+  }
+  
+  /* === RODAPÉ === */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    color: #234d2c;
+    font-size: 0.9rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+  }
+  

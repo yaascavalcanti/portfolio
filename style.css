@@ -46,6 +46,14 @@ ul{
     list-style: none;
  }
 
+ a{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: #f5f5f5;
+ }
+
  .conteiner{
     display: flex;
     align-items: center;
