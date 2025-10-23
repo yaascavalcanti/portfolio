@@ -1,117 +1,125 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background: linear-gradient(180deg, #DDFFE3 0%, #5D7D63 100%);
-    box-shadow: 0 4px 5.3px 0 rgba(0, 0, 0, 0.00);
-    margin: 0;
-    height: 100vh;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Poppins, sans-serif;
 }
 
-.logo{
-    margin-left: 35px;
-    width: 98px;
-    height: 98px;
-    aspect-ratio: 1/1;
+/* Fundo */
+body {
+   background: linear-gradient(180deg, #DDFFE3 0%, #5D7D63 100%);
+   min-height: 100vh;
 }
 
-.menu{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #86C78A;
-    color: #000;
-}
-
-ul{
-    display: flex;
-    gap: 81px;
-    margin-right: 79px;
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 90px; /* 562.5% */
-    letter-spacing: -0.48px;
-}
-
- li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
- }
-
- a{
+/* Cabeçalho */
+.menu {
+   width: 100%;
+   padding: 10px 20px;
+   background-color: #86C78A;
    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    color: #f5f5f5;
- }
+   align-items: center;
+   justify-content: space-between;
+}
 
- .conteiner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 91px;
-    }
+.logo img {
+   width: 70px;
+}
 
- h1{
-    color: #3AA34A;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 90px; /* 375% */
-    letter-spacing: -0.72px;
- }
+/* MENU */
+ul {
+   display: flex;
+   gap: 30px;
+   list-style: none;
+}
 
- p{
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.72px;
-    width: 603px;
-    
- }
+ul li a {
+   color: #FFF;
+   text-decoration: none;
+   font-weight: 500;
+}
 
- .foto{
-    margin-top: 100px;
- }
+.container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 40px 10%;
+   gap: 20px;
+}
 
- footer{
-    position:static;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    margin-top: 80px;
-    gap: 10px;
-    margin-left: 91px;
- }
+.textos h1 {
+   color: #3AA34A;
+   font-size: 32px;
+   font-weight: 900;
+   margin-bottom: 15px;
+}
 
- footer .p{
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 90px; /* 562.5% */
-    letter-spacing: -0.48px;
- }
- .fim{
-    display: flex;
-    gap: 10px;
- }
+.textos p {
+   color: #FFF;
+   font-size: 20px;
+   max-width: 500px;
+}
 
+.foto img {
+   width: 260px;
+   border-radius: 8px;
+}
 
- 
+/* Rodapé */
+footer {
+   margin-top: 60px;
+   padding: 20px;
+   display: flex;
+   gap: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+   color: #FFF;
+}
+
+footer a, footer p {
+   color: #FFF;
+   text-decoration: none;
+}
+
+.fim {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+/* 📱 RESPONSIVO PARA CELULARES */
+@media (max-width: 780px) {
+   
+   ul {
+       display: none; /* Oculta menu para versão mobile */
+   }
+
+   .container {
+       flex-direction: column;
+       text-align: center;
+   }
+
+   .textos p {
+       width: 100%;
+   }
+
+   .foto img {
+       width: 200px;
+   }
+
+   h1 {
+       font-size: 26px;
+       line-height: normal;
+   }
+
+   footer {
+       flex-direction: column;
+       gap: 15px;
+   }
+}
+
+/* 📱 MENU HAMBÚRGUER (PRONTO P/ ATIVAR SE QUISER) */
+@media (max-width: 780px) {
+   .menu {
+       justify-content: center;
+   }
+}
