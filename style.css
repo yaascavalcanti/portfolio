@@ -1,125 +1,63 @@
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: Poppins, sans-serif;
-}
+/* 📱 RESPONSIVIDADE */
+@media (max-width: 900px) {
 
-/* Fundo */
-body {
-   background: linear-gradient(180deg, #DDFFE3 0%, #5D7D63 100%);
-   min-height: 100vh;
-}
-
-/* Cabeçalho */
-.menu {
-   width: 100%;
-   padding: 10px 20px;
-   background-color: #86C78A;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-
-.logo img {
-   width: 70px;
-}
-
-/* MENU */
-ul {
-   display: flex;
-   gap: 30px;
-   list-style: none;
-}
-
-ul li a {
-   color: #FFF;
-   text-decoration: none;
-   font-weight: 500;
-}
-
-.container {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 40px 10%;
-   gap: 20px;
-}
-
-.textos h1 {
-   color: #3AA34A;
-   font-size: 32px;
-   font-weight: 900;
-   margin-bottom: 15px;
-}
-
-.textos p {
-   color: #FFF;
-   font-size: 20px;
-   max-width: 500px;
-}
-
-.foto img {
-   width: 260px;
-   border-radius: 8px;
-}
-
-/* Rodapé */
-footer {
-   margin-top: 60px;
-   padding: 20px;
-   display: flex;
-   gap: 40px;
-   justify-content: center;
-   flex-wrap: wrap;
-   color: #FFF;
-}
-
-footer a, footer p {
-   color: #FFF;
-   text-decoration: none;
-}
-
-.fim {
-   display: flex;
-   align-items: center;
-   gap: 10px;
-}
-
-/* 📱 RESPONSIVO PARA CELULARES */
-@media (max-width: 780px) {
-   
-   ul {
-       display: none; /* Oculta menu para versão mobile */
+   body {
+       height: auto;
    }
 
-   .container {
+   .menu {
        flex-direction: column;
-       text-align: center;
+       gap: 10px;
+       padding: 10px 0;
    }
 
-   .textos p {
+   ul {
+       margin-right: 0;
+       gap: 20px;
+       line-height: normal;
+       font-size: 14px;
+   }
+
+   .conteiner {
+       flex-direction: column;
+       margin-left: 0;
+       text-align: center;
+       gap: 20px;
+       padding: 20px;
+   }
+
+   h1 {
+       font-size: 20px;
+       line-height: normal;
+       margin-top: 20px;
+   }
+
+   p {
        width: 100%;
+       font-size: 18px;
+   }
+
+   .foto {
+       margin-top: 20px;
    }
 
    .foto img {
        width: 200px;
    }
 
-   h1 {
-       font-size: 26px;
-       line-height: normal;
-   }
-
    footer {
        flex-direction: column;
-       gap: 15px;
+       margin-left: 0;
+       gap: 10px;
+       text-align: center;
+       width: 100%;
    }
-}
 
-/* 📱 MENU HAMBÚRGUER (PRONTO P/ ATIVAR SE QUISER) */
-@media (max-width: 780px) {
-   .menu {
+   footer img {
+       width: 30px;
+   }
+
+   .fim {
        justify-content: center;
    }
 }
