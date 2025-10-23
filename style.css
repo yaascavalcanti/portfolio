@@ -1,4 +1,95 @@
-/* 📱 RESPONSIVIDADE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(180deg, #DDFFE3 0%, #5D7D63 100%);
+    min-height: 100vh;
+}
+
+.logo {
+    margin-left: 35px;
+    width: 98px;
+    height: 98px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #86C78A;
+    color: #000;
+}
+
+ul {
+    display: flex;
+    gap: 81px;
+    margin-right: 79px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 90px;
+    letter-spacing: -0.48px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 91px;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+h1 {
+    color: #3AA34A;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 90px;
+    letter-spacing: -0.72px;
+}
+
+p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    width: 603px;
+}
+
+.foto {
+    margin-top: 100px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 91px;
+    margin-top: 80px;
+    width: auto;
+}
+
+.fim {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* ✅ RESPONSIVIDADE */
 @media (max-width: 900px) {
 
    body {
@@ -18,7 +109,7 @@
        font-size: 14px;
    }
 
-   .conteiner {
+   .container {
        flex-direction: column;
        margin-left: 0;
        text-align: center;
